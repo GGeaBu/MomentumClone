@@ -18,32 +18,38 @@
         <span></span>
         <span></span>
     </div>
-    <!-- Log in and Clock and Quote -->
     <div class="main__container">
-        <h1 class="hello hidden">Hello What's your name?</h1>
-        <form class="hidden" id="login-form">
-            <input 
-                required
-                maxlength="15"
-                type="text"
-                placeholder="What is your name?"
-            >
-            <input type="submit" value="Log In">
-        </form>
-        <h2 id="clock">00:00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <!-- Log in and Clock and Quote -->
+        <div class="login__before__container">
+            <form class="hidden" id="login-form">
+                <h1 class="hello hidden">Hello What's your name?</h1>
+                <input 
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="What is your name?"
+                >
+                <!-- <input type="submit" value="Log In"> -->
+        </div>
+        <!-- To do list -->
+        <div class="login__after__container">
+            </form>
+            <div class="login-after">
+                <h2 id="clock">00:00:00</h2>
+                <h1 id="greeting" class="hidden"></h1>
+                <div id="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <form id="todo-form">
+                <input type="text" placeholder="Wirte a To Do and Press Enter" required>
+            </form>
+            <ul id="todo-list">
+                
+            </ul>
         </div>
     </div>
-    <!-- To do list -->
-    <form id="todo-form">
-        <input type="text" placeholder="Wirte a To Do and Press Enter" required>
-    </form>
-    <ul id="todo-list">
-        
-    </ul>
 
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>

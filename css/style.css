@@ -56,6 +56,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-user-drag: none;
 }
 
 /* weather */
@@ -78,8 +79,31 @@ img {
 }
 
 /* main container */
+
 .main__container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.login__before__container {
   text-align: center;
 }
 
-/* 수정중 */
+.login__after__container {
+  text-align: center;
+  display: none;
+}
+
+/* lonin form */
+#login-form {
+  font-size: var(--font-large);
+}
+
+.hello {
+  margin: 0;
+}
+
+/* 수정중 (중앙 정렬이 필요ㅕ) */
